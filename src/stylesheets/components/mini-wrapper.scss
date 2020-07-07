@@ -1,0 +1,28 @@
+.mini-wrapper{
+    &{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 2rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+    
+
+    >.mini{
+        background: #fff;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 30px;
+
+        img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+}

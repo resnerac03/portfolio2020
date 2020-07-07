@@ -1,0 +1,51 @@
+.details-wrapper{
+    &{
+        text-align: left;
+
+        @media #{$min-tablet} {
+            margin-top: 20px;
+        }
+    }
+
+    >.name{
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 13px;
+    }
+
+    >.links{
+        
+        li{
+            display: grid;
+            align-items: center;
+            margin-bottom: 15px;
+            grid-template-columns: 48px 1fr;
+            text-align: left;
+            position: relative;
+
+            &:nth-child(2){
+                .-pin{
+                    justify-self: center;
+                    margin-left: -10px;
+                }
+            }
+
+            span{
+                justify-self: left;
+            }
+        }
+
+        &.-socials{
+            display: flex;
+
+            li{
+                display: block;
+                margin-right: 18px;
+
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+
+body{
+    background-color: #ffffff;
+    color: map-get($colors, black);
+    font-family: $main-font;
+    overflow-x: hidden;
+    font-size: 16px;
+
+
+    @media #{$min-tablet} {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1160px) {
+        font-size: 20px;
+    }
+    
+}
+
+ul{
+    list-style-type: none;
+}

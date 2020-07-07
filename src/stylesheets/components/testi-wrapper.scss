@@ -1,0 +1,41 @@
+.testi-wrapper{
+    &{
+        max-width: 835px;
+        margin: auto;
+    }
+
+    >.testimonial{
+        font-style: italic;
+        margin: 52px 0 77px;
+        line-height: 1.9rem;
+        font-size: .9em;
+    }
+
+    >.author{
+
+        &{
+            position: relative;
+            font-size: .9rem;
+
+            &:before{
+                content: "";
+                position: absolute;
+                border: 3px solid map-get($colors, primary);
+                top: -28px;
+                left: 50%;
+                width: 73px;
+                transform: translate(-50%, 0);
+            }
+    
+        }
+
+        
+        >.name{
+            font-weight: bold;
+        }
+
+        >.job{
+            font-style: italic;
+        }
+    }
+}

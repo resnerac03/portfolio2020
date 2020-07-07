@@ -1,0 +1,31 @@
+.main-wrapper{
+    &{
+        background-color: #fff;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100%;
+    }
+
+    @media #{$min-netbook} {
+        background:
+        url(../images/bg1.png)no-repeat;
+        background-position-x: 187%;
+        background-position-y: -10%;
+    }
+
+    @media #{$min-medium-desktop}{
+        background-position-x: 151%;
+        background-position-y: -12%;
+    }
+
+    @media #{$min-large-desktop} {
+        background-position-x: 121%;
+        background-position-y: -7%;
+    }
+
+    @media #{$min-big-desktop}{
+        background-position-x: 103%;
+        background-position-y: -3%;
+    }
+   
+}

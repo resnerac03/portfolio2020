@@ -1,0 +1,11 @@
+.main-logo {
+    &{
+        grid-area: main-logo;
+        display: grid;
+        align-content: center;
+    }
+    
+    > a > .logo{
+        width: 80px;
+    }
+}

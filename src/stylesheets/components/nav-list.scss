@@ -1,0 +1,35 @@
+.nav-list {
+    &{
+        grid-area: nav-list;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    >.item {
+        background: #1dafbf;
+
+        @media #{$min-netbook} {
+            background: transparent;
+            border: 3px solid #ffffff;
+            border-radius: 30px;
+        }
+    }
+    
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        transition: all .22s cubic-bezier(.17,.67,.83,.67);
+        text-transform: uppercase;
+        font-size: .875em;
+        font-weight: bold;
+        display: block;
+        padding: 6px 28px;
+
+        @media #{$min-netbook} {
+            font-size: 1em;
+        }
+    }
+    
+}

@@ -1,0 +1,32 @@
+$main-font: 'Open Sans', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+$colors: (
+    primary: #1DAFBF,
+    black: #2B2B2B,
+    grey: #F1F1F1
+);
+$font-weight: (
+  lg: 300,
+  rg: 400,
+  md: 500,
+  sm: 600,
+  bld: 700,
+  blk: 900
+);
+$sizes: (
+  base: 16px,
+  lsm: 13px,
+  sm: 14px,
+  ls: 12px,
+  lg: 56px,
+  smd: 22px,
+  bg: 36px,
+  sbg: 32px,
+  sg: 18px,
+  smlg: 26px,
+  lslg: 28px,
+  hg: 82px,
+  smsm: 20px
+);
+$animation-type: cubic-bezier(.17,.67,.83,.67);
+$gradient-type: linear-gradient(#FFCE0C, #FFB20A);

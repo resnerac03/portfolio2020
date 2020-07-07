@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Global
+@import 'variables';
+@import 'media';
+@import 'base';
+
+// Big Components (ex. containers, wrapper, modal, etc..)
+@import 'components/main-wrapper';
+@import 'components/main-container';
+@import 'components/fluid-container';
+@import 'components/main-nav';
+@import 'components/main-body';
+@import 'components/main-footer';
+
+// Small Componenets (ex. buttons, cards, nav links, etc..)
+@import 'components/main-logo';
+@import 'components/nav-list';
+@import 'components/main-btn';
+@import 'components/cards-wrapper';
+@import 'components/mini-wrapper';
+@import 'components/testi-wrapper';
+@import 'components/contact-wrapper';
+@import 'components/form-wrapper';
+@import 'components/details-wrapper';
+

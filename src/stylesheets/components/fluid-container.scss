@@ -1,0 +1,51 @@
+.fluid-container{
+    &{
+        width: 100%;
+        max-width: 100%;
+        background-color: map-get($colors, grey);
+        color: #fff;
+    }
+
+    &.-traits{
+        background-color: map-get($colors, primary);
+    }
+
+    &.-skills{
+        padding: 0;
+    }
+
+    &.-works{
+        background-color: #ffffff;
+        color: map-get($colors, black);
+
+        @media #{$min-netbook} {
+            background-image: url(../images/works_bg1.png), url(../images/works_bg2.png);
+            background-position: -29% 108px, 278% -59px;
+            background-repeat: no-repeat, no-repeat;
+            padding: 0;
+        }
+
+        @media #{$min-large-desktop}{
+            background-position: -18% 140px, 191% -59px;
+        }
+
+        @media #{$min-big-desktop} {
+            background-position: -1% 140px, 142% -59px;
+        }
+
+    }
+
+    &.-contact{
+        background-color: map-get($colors, primary);
+        padding: 0;
+
+
+        @media #{$min-netbook} {
+            background:
+            url(../images/bg-footer.png)no-repeat;
+            background-position-x: 105%;
+            background-position-y: -68%;
+            background-color: map-get($colors, primary);
+        }
+    }
+}

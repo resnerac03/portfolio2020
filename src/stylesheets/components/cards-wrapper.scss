@@ -1,0 +1,165 @@
+.cards-wrapper{
+    &{
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        @media screen and (min-width: 800px){
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        }
+
+        @media screen and (min-width: 1160px) {
+            column-gap: 4rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+    }
+
+    >.card{
+        &{
+            background-color: map-get($colors, grey);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 300px;
+            position: relative;
+            margin-bottom: 200px;
+
+            @media screen and (min-width: 600px) {
+                height: 250px;
+            }
+
+            @media screen and (min-width: 900px) {
+                height: 234px;
+                box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.25);
+            }
+
+            @media screen and (min-width: 1160px) {
+                margin-bottom: 0;
+                height: 252px;
+            }
+        }
+
+        &:nth-child(1){
+            background-image: url(../images/works_1.png);
+        }
+        
+        &:nth-child(2){
+            background-image: url(../images/works_2.png);
+        }
+
+        &:nth-child(3){
+            background-image: url(../images/works_3.png);
+        }
+        
+        &:nth-child(4){
+            background-image: url(../images/works_4.png);
+        }
+
+        &:nth-child(5){
+            background-image: url(../images/works_5.png);
+        }
+
+        &:nth-child(6){
+            background-image: url(../images/works_6.png);
+        }
+
+        &:hover{
+            >.content {
+                display: block
+            }
+        }
+
+        >.content{
+            &{
+                position: absolute;
+                bottom: -200px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 100%;
+                background: map-get($colors, primary);
+                color: #ffffff;
+                height: 200px;
+                padding-top: 10px;
+
+                @media screen and (min-width: 1160px) {
+                    display: none;
+                    position: relative;
+                    bottom: unset;
+                    left: unset;
+                    transform: unset;
+                    height: 100%;
+                    padding-top: 38px;
+                    background: rgba(29, 175, 191, 0.88);
+                    color: #ffffff;
+                    cursor: text;
+                }
+            }
+
+            >.title{
+                font-size: 1.5rem;
+                font-weight: bold;
+
+                @media screen and (min-width: 1160px) {
+                    text-shadow: 0 1px 3px #000000a8;
+                }
+            }
+
+            >.type{
+                font-size: 1.1rem;
+                font-weight: bold;
+
+                @media screen and (min-width: 1160px) {
+                    text-shadow: 0 1px 3px #000000a8;
+                }
+            }
+
+            >.tools{
+                background: map-get($colors, primary);
+                padding: 5px 0;
+                font-size: 0.7rem;
+                border-radius: 30px;
+                margin: 11px auto 34px;
+                max-width: 184px;
+                width: 100%;
+                background: #ffffff;
+                color: #000000;
+
+                @media screen and (min-width: 1160px) {
+                    background: #ffffff;
+                    color: #000000;
+                    margin-bottom: 43px;
+                }
+            }
+
+            >.cards-btn{
+                text-decoration: none;
+                background: #ffffff;
+                color: map-get($colors, primary);
+                padding: 6px 34px 6px 39px;
+                border-radius: 30px;
+                font-size: 1.5rem;
+                font-weight: 600;
+
+                @media screen and (min-width: 1160px) {
+                    background: #ffffff;
+                    color: map-get($colors, primary);
+                }
+
+                &:after{
+                    background-image: url(../images/right-arrow.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+                    margin-left: 9px;
+                    content: "";
+
+                    @media screen and (min-width: 1160px) {
+                        background-image: url(../images/right-arrow.png);
+                    }
+                }
+            }
+        }
+    }
+}

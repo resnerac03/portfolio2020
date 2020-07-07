@@ -1,0 +1,44 @@
+.main-btn {
+    &{
+        text-decoration: none;
+        background: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        width: 14rem;
+        height: 3.325rem;
+        font-size: 22px;
+        font-weight: 700;
+        color: map-get($colors, primary);
+        transition: all .33s cubic-bezier(.17,.67,.83,.67);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 0;
+        cursor: pointer;
+        padding-right: 21px;
+    }
+
+    &:after{
+        content: "";
+        background: url(../images/send.png) no-repeat center;
+        background-size: cover;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 27%;
+    }
+
+    &.-lg{
+       &{
+            // width: 26rem;
+            // height: 4.325rem;
+       }
+        >.icon{
+            height: 29px;
+            margin-right: .5rem;
+        }
+    }
+}
