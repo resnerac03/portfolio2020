@@ -894,7 +894,11 @@ ul {
   background: #1DAFBF;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 10rem;
+  padding-bottom: 23rem;
+  -webkit-clip-path: polygon(50% 100%, -45% 0, 145% 0);
+          clip-path: polygon(50% 100%, -45% 0, 145% 0);
+  z-index: 8;
+  position: relative;
 }
 .modal-wrapper > .modal-header > .close {
   margin-top: 27px;
@@ -939,8 +943,10 @@ ul {
   text-align: center;
   background: #fff;
   padding: 4rem 0;
-  margin-top: -8rem;
+  margin-top: -21rem;
   box-shadow: 0px 0px 7px 2px #00000026;
+  position: relative;
+  z-index: 8;
 }
 .modal-wrapper > .modal-container > .modal-content {
   max-width: 43em;
