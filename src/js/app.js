@@ -20,18 +20,18 @@ const openModal = (id) =>{
         const modal = e;
 
         if(modal.id == id){
-            modal.classList.add('animate__animated', 'animate__zoomIn', 'animate__faster', '-open');
+            modal.classList.add('animate__animated', 'animate__slideInUp', 'animate__faster', '-open');
 
             document.getElementsByTagName("body")[0].style.overflowY = 'hidden';
 
             // CLOSE BUTTON
             const close = modal.getElementsByClassName('close')[0];
             close.addEventListener('click', ()=> {
-                modal.classList.add('animate__zoomOut');
+                modal.classList.add('animate__slideOutDown');
                 document.getElementsByTagName("body")[0].style.overflowY = 'auto';
                
                 setTimeout(() => {
-                    modal.classList.remove('-open', 'animate__zoomIn', 'animate__zoomOut');
+                    modal.classList.remove('-open', 'animate__slideInUp', 'animate__slideOutDown');
                 }, 100);
             })
         
