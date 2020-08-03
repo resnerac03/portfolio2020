@@ -52,6 +52,17 @@
         }
     }
 
+    >.subhead{
+
+        &.-works{
+            text-align: left;
+            margin-bottom: 13px;
+            margin-top: 36px;
+            font-weight: bold;
+            font-size: 1.23em;
+        }
+    }
+
     >.desc{
         font-size: 1.1em;
         line-height: 1.8em;
@@ -72,7 +83,7 @@
         }
 
         &.-traits{
-            font-size: 1rem;
+            font-size: 1.3rem;
             line-height: 2.6rem;
         }
 

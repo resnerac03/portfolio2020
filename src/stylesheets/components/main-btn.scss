@@ -31,6 +31,46 @@
         right: 27%;
     }
 
+    &.-modal{
+        color: #fff;
+        background: #1DAFBF;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: unset;
+        width: 11rem;
+
+        &:after{
+            content: "";
+            background: url(../images/eye.png) no-repeat center;
+            background-size: cover;
+            width: 22px;
+            height: 15px;
+            position: absolute;
+            right: 70%;
+            top: 20px;
+        }
+    }
+    
+    &.-modal_request{
+        color: #fff;
+        background: #1DAFBF;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: unset;
+        width: 18rem;
+
+        &:after {
+            content: "";
+            background: url(../images/eye.png) no-repeat center;
+            background-size: cover;
+            width: 22px;
+            height: 15px;
+            position: absolute;
+            right: 84%; 
+            top: 20px;
+        }
+    }
+
     &.-lg{
        &{
             // width: 26rem;

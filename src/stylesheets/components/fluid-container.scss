@@ -17,10 +17,11 @@
     &.-works{
         background-color: #ffffff;
         color: map-get($colors, black);
+        background-size: contain;
 
         @media #{$min-netbook} {
-            background-image: url(../images/works_bg1.png), url(../images/works_bg2.png);
-            background-position: -29% 108px, 278% -59px;
+            // background-image: url(../images/works_bg1.png), url(../images/works_bg2.png);
+            // background-position: -29% 108px, 278% -59px;
             background-repeat: no-repeat, no-repeat;
             padding: 0;
         }

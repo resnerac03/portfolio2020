@@ -23,6 +23,8 @@
             height: 300px;
             position: relative;
             margin-bottom: 200px;
+            border: .5px solid #e0e0e0;
+            transition: .3s;
 
             @media screen and (min-width: 600px) {
                 height: 250px;
@@ -30,7 +32,6 @@
 
             @media screen and (min-width: 900px) {
                 height: 234px;
-                box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.25);
             }
 
             @media screen and (min-width: 1160px) {
@@ -40,30 +41,40 @@
         }
 
         &:nth-child(1){
-            background-image: url(../images/works_1.png);
+            background-image: url(../images/works_4.png);
+            background-position-x: left;
         }
         
         &:nth-child(2){
-            background-image: url(../images/works_2.png);
+            background-image: url(../images/digital.jpg);
         }
 
         &:nth-child(3){
-            background-image: url(../images/works_3.png);
+            background-image: url(../images/regapp_dashboard.png);
         }
         
         &:nth-child(4){
-            background-image: url(../images/works_4.png);
+            background-image: url(../images/works_1.png);
         }
 
         &:nth-child(5){
-            background-image: url(../images/works_5.png);
+            background-image: url(../images/DASHBOARD.png);
+            background-position-x: left;
         }
 
         &:nth-child(6){
-            background-image: url(../images/works_6.png);
+            background-image: url(../images/bright.png);
+            background-position-x: left;
         }
 
         &:hover{
+
+           
+            transform: scale(1.05);
+            box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.25);
+            // border: 0;
+           
+
             >.content {
                 display: block
             }
@@ -91,7 +102,7 @@
                     padding-top: 38px;
                     background: rgba(29, 175, 191, 0.88);
                     color: #ffffff;
-                    cursor: text;
+                    cursor: pointer;
                 }
             }
 
