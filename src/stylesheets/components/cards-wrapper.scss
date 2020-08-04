@@ -163,8 +163,9 @@
                     display: inline-block;
                     width: 17px;
                     height: 17px;
-                    margin-left: 9px;
+                    margin-left: 5px;
                     content: "";
+                    transform: rotate(-90deg);
 
                     @media screen and (min-width: 1160px) {
                         background-image: url(../images/right-arrow.png);
