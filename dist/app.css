@@ -238,6 +238,11 @@ ul {
   width: 250px;
   margin: 0 auto;
 }
+@media screen and (min-width: 2000px) {
+  .main-container.-intro > .thumbnail {
+    width: 350px;
+  }
+}
 .main-container.-intro > .thumbnail img {
   cursor: pointer;
   width: 100%;
@@ -245,11 +250,6 @@ ul {
 }
 .main-container.-intro > .thumbnail img:hover {
   transform: scale(1.1);
-}
-@media screen and (min-width: 2000px) {
-  .main-container.-intro > .thumbnail img {
-    width: 350px;
-  }
 }
 @-webkit-keyframes animGetBig {
   from {
