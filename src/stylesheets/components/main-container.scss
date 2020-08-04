@@ -121,25 +121,13 @@
             margin-bottom: 30px;
         }
 
-        // @media screen and (max-width:650px){
-        //     height: calc(100vh - 5rem);
-        // }
-
-        // @media #{$min-big-desktop}{
-        //     padding-top: 0;
-        //     display: flex;
-        //     flex-direction: column;
-        //     align-items: center;
-        //     justify-content: center;
-        // }
-
         >.thumbnail{
 
-           
-
+            width: 250px;
+            margin: 0 auto;
             img{
                 cursor: pointer;
-                width: 250px;
+                width: 100%;
                 transition: .3s;
 
                 &:hover{

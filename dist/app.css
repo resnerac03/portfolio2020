@@ -234,9 +234,13 @@ ul {
   padding: 0;
   margin-bottom: 30px;
 }
+.main-container.-intro > .thumbnail {
+  width: 250px;
+  margin: 0 auto;
+}
 .main-container.-intro > .thumbnail img {
   cursor: pointer;
-  width: 250px;
+  width: 100%;
   transition: 0.3s;
 }
 .main-container.-intro > .thumbnail img:hover {
