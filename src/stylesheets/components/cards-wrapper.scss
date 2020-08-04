@@ -9,8 +9,11 @@
         }
 
         @media screen and (min-width: 1160px) {
-            column-gap: 4rem;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        @media screen and (max-width: 900px){
+            row-gap: 4em;
         }
     }
 
@@ -78,6 +81,8 @@
             >.content {
                 display: block
             }
+
+           
         }
 
         >.content{

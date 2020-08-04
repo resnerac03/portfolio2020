@@ -44,5 +44,12 @@ Array.from(card).forEach(e => {
     e.addEventListener('click', (res)=> {
         let id = res.currentTarget.id
         openModal(id);
-    })
+    });
+
+    // e.addEventListener('mouseover', (res) => {
+    //     const btn = res.currentTarget.getElementsByClassName('cards-btn')[0]
+    //     btn.classList.add('animate__animated','animate__slideInUp');
+    //     // res.currentTarget.classList.add('animate__animated','animate__slideInUp');
+    // })
 })
+
