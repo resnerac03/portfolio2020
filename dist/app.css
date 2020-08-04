@@ -675,11 +675,10 @@ ul {
   background-image: url(../images/works_1.png);
 }
 .cards-wrapper > .card:nth-child(5) {
-  background-image: url(../images/DASHBOARD.png);
-  background-position-x: left;
+  background-image: url(../images/SA.png);
 }
 .cards-wrapper > .card:nth-child(6) {
-  background-image: url(../images/bright.png);
+  background-image: url(../images/DASHBOARD.png);
   background-position-x: left;
 }
 .cards-wrapper > .card:hover {
@@ -1004,10 +1003,30 @@ ul {
   position: relative;
   z-index: 8;
 }
+@media screen and (max-width: 1160px) {
+  .modal-wrapper > .modal-container {
+    max-width: 35em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .modal-wrapper > .modal-container {
+    max-width: 21em;
+  }
+}
 .modal-wrapper > .modal-container > .modal-content {
   max-width: 43em;
   margin: auto;
   margin-bottom: 35px;
+}
+@media screen and (max-width: 1160px) {
+  .modal-wrapper > .modal-container > .modal-content {
+    max-width: 28em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .modal-wrapper > .modal-container > .modal-content {
+    max-width: 16em;
+  }
 }
 .modal-wrapper > .modal-container > .modal-content > .gallery {
   grid-gap: 2em;
@@ -1015,12 +1034,22 @@ ul {
   justify-items: center;
   grid-template-areas: "primary primary primary" "second third fourth";
 }
+@media screen and (max-width: 1160px) {
+  .modal-wrapper > .modal-container > .modal-content > .gallery {
+    grid-template-areas: "primary" "second" "third" "fourth";
+  }
+}
 .modal-wrapper > .modal-container > .modal-content > .gallery > .image {
   width: 250px;
 }
 .modal-wrapper > .modal-container > .modal-content > .gallery > .image:nth-child(1) {
   grid-area: primary;
   width: 500px;
+}
+@media screen and (max-width: 1160px) {
+  .modal-wrapper > .modal-container > .modal-content > .gallery > .image:nth-child(1) {
+    width: 250px;
+  }
 }
 .modal-wrapper > .modal-container > .modal-content > .gallery > .image:nth-child(2) {
   grid-area: second;

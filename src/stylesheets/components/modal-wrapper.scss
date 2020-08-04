@@ -87,10 +87,26 @@
         position: relative;
         z-index: 8;
 
+        @media screen and (max-width: 1160px){
+            max-width: 35em;
+        }
+
+        @media screen and (max-width: 650px){
+            max-width: 21em;
+        }
+
         >.modal-content{
             max-width: 43em;
             margin: auto;
             margin-bottom: 35px;
+
+            @media screen and (max-width: 1160px){
+                max-width: 28em;
+            }
+
+            @media screen and (max-width: 650px){
+                max-width: 16em;
+            }
 
             >.gallery{
                 grid-gap: 2em;
@@ -100,12 +116,23 @@
                     'primary primary primary'
                     'second third fourth';
 
+                @media screen and (max-width: 1160px){
+                    grid-template-areas: 
+                    'primary' 'second' 'third' 'fourth';
+                }
+
                 >.image{
                     width: 250px;
+
+                    
 
                     &:nth-child(1){
                         grid-area: primary;
                         width: 500px;
+
+                        @media screen and (max-width: 1160px){
+                            width: 250px;
+                        }
                     }
 
                     &:nth-child(2){
