@@ -232,7 +232,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   padding: 0;
-  margin-bottom: 30px;
+  padding-bottom: 61px;
 }
 .main-container.-intro > .thumbnail {
   width: 250px;
