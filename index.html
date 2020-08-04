@@ -287,7 +287,7 @@
                         Let's make your ideas into reality.
                     </div>
                     <div class="contact-wrapper">
-                        <div class="form-wrapper">
+                        <form class="form-wrapper" method="POST" data-netlify="true">
                             <div class="form-control">
                                 <div class="form-label">
                                     Name
@@ -309,13 +309,16 @@
                                     Message
                                 </div>
                                 <div class="form-input">
-                                    <textarea name="name" id="" cols="30" rows="10"></textarea>
+                                    <textarea name="message" id="" cols="30" rows="10"></textarea>
                                 </div>
+                            </div>
+                            <div class="form-control">
+                               <div class="recaptcha" data-netlif-recaptcha="true"></div>
                             </div>
                             <a href="#" class="main-btn" id="form-submit">
                                 SEND
                             </a>
-                        </div>
+                        </form>
     
                         <div class="details-wrapper">
                             <div class="name">
