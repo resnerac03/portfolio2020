@@ -992,6 +992,9 @@ ul {
   margin-right: 5px;
   margin-bottom: 6px;
 }
+.modal-wrapper#regapp > .modal-container > .modal-content > .gallery > .image:nth-child(1) {
+  box-shadow: unset;
+}
 .modal-wrapper > .modal-container {
   max-width: 55em;
   margin: 0 auto;
@@ -1040,16 +1043,12 @@ ul {
   }
 }
 .modal-wrapper > .modal-container > .modal-content > .gallery > .image {
-  width: 250px;
+  width: 100%;
 }
 .modal-wrapper > .modal-container > .modal-content > .gallery > .image:nth-child(1) {
   grid-area: primary;
-  width: 500px;
-}
-@media screen and (max-width: 1160px) {
-  .modal-wrapper > .modal-container > .modal-content > .gallery > .image:nth-child(1) {
-    width: 250px;
-  }
+  width: 100%;
+  box-shadow: 0px 0px 7px 1px #00000047;
 }
 .modal-wrapper > .modal-container > .modal-content > .gallery > .image:nth-child(2) {
   grid-area: second;
