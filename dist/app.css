@@ -479,7 +479,7 @@ ul {
   .fluid-container.-contact {
     background: url(../images/bg-footer.png) no-repeat;
     background-position-x: 105%;
-    background-position-y: -68%;
+    background-position-y: 150%;
     background-color: #1DAFBF;
   }
 }
