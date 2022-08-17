@@ -3840,8 +3840,8 @@ Array.from(card).forEach(function (e) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\resne\Desktop\paco\portfolio\web\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\resne\Desktop\paco\portfolio\web\src\stylesheets\app.scss */"./src/stylesheets/app.scss");
+__webpack_require__(/*! /Users/neilresnera/Desktop/personal/portfolio2020/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/neilresnera/Desktop/personal/portfolio2020/src/stylesheets/app.scss */"./src/stylesheets/app.scss");
 
 
 /***/ })
